@@ -6,7 +6,7 @@
   /* You can add more generic styles here */
 
   h1 {
-    @apply text-xl sm:text-2xl  md:text-3xl text-re lg:text-4xl font-bold;
+    @apply text-xl sm:text-2xl  md:text-3xl lg:text-4xl font-bold;
   }
   h2 {
     @apply text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold;
