@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    ".src/**/*.{js,jsx,ts,tsx}"
+    "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
     extend: {
@@ -14,6 +14,11 @@ module.exports = {
             50: '#d7e3f7'
           }
         }  
+      },
+      fontFamily: {
+        'babylonica': ['Babylonica', 'cursive'],
+        'fira-sans': ['Fira Sans', 'sans-serif'],
+        'heading': ['Play', 'sans-serif']
       }
     },
     
