@@ -1,16 +1,8 @@
-import { Component, Fragment } from "react";
+import { Component } from "react";
 import Header from "../../components/Header";
 import Post from "../../components/Post";
 import "./home.css";
-
-type PostDetails = {
-  id: string;
-  title: string;
-  description: React.ReactNode;
-  hoursCount?: number;
-  lecturerName?: string;
-  tags: string[];
-};
+import { PostDetails } from "../../types/PostDetails";
 
 type HomeProps = {};
 
@@ -26,44 +18,16 @@ export default class Home extends Component<HomeProps, HomeState> {
         {
           id: "1",
           title: "Lecture Day 01",
-          description: (
-            <p>
-              Lecture D01 - Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit. Eligendi alias laborum accusantium iusto molestias. Magnam
-              nisi atque, nihil, ex quaerat quam velit deserunt consequatur
-              soluta pariatur cumque accusamus consequuntur. Quidem! Lorem ipsum
-              dolor sit amet consectetur, adipisicing elit. Eligendi alias
-              laborum accusantium iusto molestias. Magnam nisi atque, nihil, ex
-              quaerat quam velit deserunt consequatur soluta pariatur cumque
-              accusamus consequuntur. Quidem! Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Eligendi alias laborum accusantium
-              iusto molestias. Magnam nisi atque, nihil, ex quaerat quam velit
-              deserunt consequatur soluta pariatur cumque accusamus
-              consequuntur. Quidem!
-            </p>
-          ),
+          description:
+            "Lecture D01 - Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin",
           hoursCount: 8,
           tags: ["intro", "typescript"],
         },
         {
           id: "2",
           title: "Lecture Day 02",
-          description: (
-            <p>
-              Lecture D02 - Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit. Eligendi alias laborum accusantium iusto molestias. Magnam
-              nisi atque, nihil, ex quaerat quam velit deserunt consequatur
-              soluta pariatur cumque accusamus consequuntur. Quidem! Lorem ipsum
-              dolor sit amet consectetur, adipisicing elit. Eligendi alias
-              laborum accusantium iusto molestias. Magnam nisi atque, nihil, ex
-              quaerat quam velit deserunt consequatur soluta pariatur cumque
-              accusamus consequuntur. Quidem! Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Eligendi alias laborum accusantium
-              iusto molestias. Magnam nisi atque, nihil, ex quaerat quam velit
-              deserunt consequatur soluta pariatur cumque accusamus
-              consequuntur. Quidem!
-            </p>
-          ),
+          description:
+            "Lecture D02 - Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin",
           hoursCount: 6,
           lecturerName: "Chanu",
           tags: ["react", "tailwind"],
@@ -71,22 +35,8 @@ export default class Home extends Component<HomeProps, HomeState> {
         {
           id: "3",
           title: "Lecture Day 03",
-          description: (
-            <p>
-              Lecture D03 - Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit. Eligendi alias laborum accusantium iusto molestias. Magnam
-              nisi atque, nihil, ex quaerat quam velit deserunt consequatur
-              soluta pariatur cumque accusamus consequuntur. Quidem! Lorem ipsum
-              dolor sit amet consectetur, adipisicing elit. Eligendi alias
-              laborum accusantium iusto molestias. Magnam nisi atque, nihil, ex
-              quaerat quam velit deserunt consequatur soluta pariatur cumque
-              accusamus consequuntur. Quidem! Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Eligendi alias laborum accusantium
-              iusto molestias. Magnam nisi atque, nihil, ex quaerat quam velit
-              deserunt consequatur soluta pariatur cumque accusamus
-              consequuntur. Quidem!
-            </p>
-          ),
+          description:
+            "Lecture D03 - Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin  Lorem ipsum dolor sit amet consectetur, adipisicin",
           tags: ["Lifecycle", "rounting", "structure"],
         },
       ],
