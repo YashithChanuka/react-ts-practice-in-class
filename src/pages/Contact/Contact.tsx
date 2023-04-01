@@ -1,6 +1,6 @@
-import { TextField } from "@mui/material";
 import { Component } from "react";
 import Header from "../../components/Header";
+import ContactForm from "../../components/ContactForm";
 
 export default class Contact extends Component {
   render() {
@@ -26,30 +26,7 @@ export default class Contact extends Component {
           </span>
 
           <div className="mt-3">
-            <form className="w-full py-8 px-32 flex flex-col space-y-3">
-              <TextField
-                label="Email"
-                type="email"
-                variant="outlined"
-                placeholder="Enter your valid Email here"
-                fullWidth={true}
-                required
-              />
-              <TextField
-                label="Message"
-                type="textl"
-                variant="outlined"
-                placeholder="Enter your Message here"
-                fullWidth={true}
-                multiline
-                minRows={5}
-                maxRows={Infinity}
-                required
-              />
-              <button className="w-full bg-accent-navy-200 text-white py-2 rounded">
-                <h6>Submit</h6>
-              </button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </>
